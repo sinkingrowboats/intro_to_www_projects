@@ -1,5 +1,7 @@
 # Intro to the World Wide Web Projects
 
+## To View, Please [Navigate to the Github Pages for this Repository](https://sinkingrowboats.github.io/intro_to_www_projects)
+
 ### This is a work in Progress
 
 This is supposed to be the code from my Intro to the World Wide Web course. I mainly put these up here to showcase my understanding of web design principles. As such, if you navigate to the [github pages for this repo](https://sinkingrowboats.github.io/intro_to_www_projects). You will see a list (okay right now it's just one item), you will see a list of links to the individual projects. The projects are all the static webpages with their HTML, CSS, and Javascript files.
