@@ -1,11 +1,11 @@
-/* Bubble Sort Script, created 2/14/2015, last edited 2/15/2015
+/* Bubble Sort Script, created 2/14/2016, last edited 2/15/2019
 This program
 (1) generates a pseudo-random list of 10 numbers
 (2) populates the table written into the html with the random numbers
 (3) orders the 10 numbers from smallest to largest
 (4) populates the bottom row of the table with these numbers */
 
-window.onload = initAll; //loads the main function
+window.onload = initAll(); //loads the main function
 var bubArray = new Array(10); //creates a new array with 10 empty items
 
 function initAll() {
@@ -47,3 +47,48 @@ function bubSrt(bubArray) {
     } while(swap === true); //perpetuates loop while the swap variable is true
 }
 //end function
+
+/*
+function mrgSrt(inputArr) {
+    var length = inputArr.length;
+    
+    if(length == 1) {
+    	return inputArr;
+    }
+    
+    else {
+        var halfLen = Math.floor(length/2.0);
+	var leftLen = halfLen - 0;
+	var rightLen = length - halfLen;
+	var leftArr = mrgSrt(inputArr.slice(0, halfLen));
+	var rightArr = mrgSrt(inputArr.slice(halfLen, length));
+	
+	var leftCount = 0;
+	var rightCount = 0;
+	var srtArray
+	
+	while(leftCount < leftLen && rightCount < rightLen) {
+	    var leftNum = leftArr[leftCount];
+	    var rightNum = rightArr[rightCount];
+	    
+	    if (leftNum < rightNum) {
+	        srtArray.push(leftNum);
+		leftCount++;
+	    }
+	    else {
+	        srtArray.push(rightNum);
+		rightCount++
+	    }
+	}
+	
+	if(leftCount < leftLen) {
+	    srtArray = srtArray.concat(leftArr.slice(leftCount, leftLen));
+	}
+	else {
+	    srtArray = srtArray.concat(rightArr.slice(rightCount, rightLen));
+	}
+	
+	
+    }
+*/
+}
