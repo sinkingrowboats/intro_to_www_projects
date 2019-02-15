@@ -1,0 +1,135 @@
+/* import of google fonts */
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans:400,800');
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", "Arial", sans-serif;
+	background-image: url("img/main/Flag.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: auto 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav {
+	text-align: center;
+	position: fixed;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	width: 100%;
+	min-width: 900px;
+	height: 60px;
+	top: 0;
+	/* http://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+	/* since this isn't required, i'm considering it outside of the "fixed width"
+	 * specificaiton of the project. Feel free to ignore if it poses a grading issue
+	 */
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin-left: -50px;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 50px;
+}
+main, header {
+	width: 1100px;
+}
+
+header {
+	margin: 80px 40px 20px 40px;
+	font-family: "Anton", "Arial", sans-serif;
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 0;
+}
+
+header h1 {
+	margin: 0;
+}
+
+main {
+	margin: 20px 40px;
+}
+
+section {
+	margin: 20px 0;
+	height: 200px;
+	background-color: rgba(155, 0, 0, 0.7);
+	border: solid 8px rgb(155, 0, 0);
+	border-radius: 50px 10px 50px 10px;
+	width: 100%;
+}
+
+section:nth-child(even) {
+	background-color: rgba(0, 39, 102, 0.7);
+	border-color: rgb(0, 39, 102);
+	border-radius: 10px 50px 10px 50px;
+	color: white;
+}
+
+section div {
+	float: left;
+	margin: 5px 0px 5px 0px;
+}
+
+section img {
+	height: 120px;
+}
+
+.bio {
+	font-size: 18px;
+	font-weight: 800;
+	text-align: left;
+	margin: 15px 5px;
+	width: 400px;
+}
+
+.bio ul {
+	margin: 0;
+	list-style: none;
+}
+
+.photo {
+	font-size: 20px;
+	font-family: "Anton", "Arial", sans-serif;
+	width: 310px;
+	margin-left: 40px;
+}
+
+.photo img {
+	margin: 10px 0;
+}
+
+.photo h1 {
+	padding: 0;
+	margin: 0;
+}
+
+.description {
+	width: 300px;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.description span {
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+#home {
+	font-family: "Anton", "Arial", sans-serif;
+	font-size: 20px;
+}

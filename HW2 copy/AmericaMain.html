@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- While I fiddled with the the styling to make it look a little better, changed some backgrounds,
+	 The semantic elements should all be the same, with maybe the exception of the cast photo.
+	 That I did change to be the background of the div that contains the ticketing information,
+	 rather than its owh div or <img> element. -->
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="AmericaMain.css"/>
+	<title>Samantha Rey, Homework 2 Main</title>
+	<!-- Last Edit: Jan 21th 2017-->
+	<!-- HTML Validated on https://validator.w3.org/   All that remained was a warning about not having
+	     a heading element and assigning roles it belived weren't necessary which I belived could be ignored -->
+	<!-- CSS Validated on https://jigsaw.w3.org/css-validator/  It said "congrats! no errors found" :) -->
+	<!-- CITATION: http://w3c.github.io/html/dom.html#wai-aria
+		 for ease in determining correct role attributes-->
+	<!-- CITATION: http://stackoverflow.com/questions/4216035/css-background-image-alt-attribute
+		 for what to do with a background image since only <img> tag supports "alt" attribute -->
+</head>
+<body title="America Flag Background">
+	<!-- Nav Bar -->
+	<nav role="navigation">
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#reviews">Reviews</a></li>
+			<li><a id="home" href="AmericaMain.html">AMERICA , AMERICA </a></li>
+			<li><a href="AmericaBio.html">Cast</a></li>
+			<li><a href="#tickets">Tickets</a></li>
+		</ul>
+	</nav>
+	<!-- Main page content -->
+	<main role="main">
+		<!-- AMERICA AMERICA header -->
+		<header>
+			<div role="heading">
+				<p id="onsale"><a href="#tickets">TICKETS ON SALE NOW!</a></p>
+				<p id="title">AMERICA, AMERICA &mdash;</p>
+				<p>THE MUSICAL</p>
+			</div>
+		</header>
+		<!-- Container for left side of page elements -->
+		<div class="inline-container">
+			<!-- Cast List -->
+			<section id="cast" title="Broadway Curtain">
+				<div role="heading"><h2><a href="AmericaBio.html">The Cast</a></h2></div>
+				<ul>
+					<li>Nathaniel &middot; <a href="AmericaBio.html#harvey">Harvey Smatter</a></li>
+					<li>Linda &middot; <a href="AmericaBio.html#scarlett">Scarlett O'Hara</a></li>
+					<li>Prof. Bean &middot; <a href="AmericaBio.html#daniel">Daniel Louis Castellaneta</a></li>
+					<li>Jal &middot; <a href="AmericaBio.html#jamesJonah">James Jonah Cummings</a></li>
+					<li>Shai &middot; <a href="AmericaBio.html#lisa">Lisa Distal</a></li>
+					<li>Mr. Hal &middot; <a href="AmericaBio.html#melvin">Melvin Jerome Blanc</a></li>
+					<li>Katie &middot; <a href="AmericaBio.html#kath">Kath Insoucian</a></li>
+					<li>Tanya &middot; <a href="AmericaBio.html#dani">Dani Devans</a></li>
+					<li>Ross &middot; <a href="AmericaBio.html#chang">Chang Kong-sang</a></li>
+					<li>Gen. Montback &middot; <a href="AmericaBio.html#jamesThomas">James Thomas Fallon</a></li>
+					<li>Lt. Rider &middot; <a href="AmericaBio.html#wes">Wes Studi</a></li>
+				</ul>
+			</section>
+			<!-- Ticketing information -->
+			<section id="tickets" title="Cast image">
+				<p>Tickets are going fast!</p>
+				<p>Please call the box office at:</p>
+				<p >212 474-4567</p>
+			</section>
+		</div>
+		<!-- Container for right side of page elements -->
+		<div class="inline-container">
+			<!-- Show description and information -->
+			<section id="about">
+				<div role="heading"><h2>AMERICA, AMERICA &mdash; The Smash Broadway Hit!</h2></div>
+				<p>From the writers and directors that gave you the smash musicals, <em>Crazy Over the Moon</em>, and <em>Serendipity</em> comes their greatest work yet, <em>America, America &mdash; The Musical</em>. This show takes you back in time to the American Revolution and weaves a story that blends comedy, drama, and song, to tell an enchanting tale of the founding of our nation. Set in New York City in 1777, you'll experience a one-of-a-kind, breathtaking experience that will make you laugh and cry.</p>
+				<p>Tickets for holiday performances are now on sale. Good seats in all sections can be purchased at the box office, by mail order, or by phone. Group rates are not being honored for holiday shows. Please arrive 30 minutes before show times.</p>
+			</section>
+			<!-- Show reviews -->
+			<section id="reviews">
+				<div role="heading"><h2>The Critics Have Spoken</h2></div>
+				<p>America, America, is a fun-filled, touching and enchanting experience. The cast is uniformly wonderful, and the sets and the lighting are first-rate. This is a musical for all ages. You will be uplifted and filled with joy by this musical. <em>&mdash; Janet O'Toole, Broadway Gazette</em></p>
+				<p>This play is unlike any other Broadway play I have ever seen. It will leave you breathless. This is a fantastic work of Broadway art. Be ready to be captivated. <em>&mdash; Fred Berrs, Broadway in Review</em></p>
+			</section>
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer>
+		<p>The Hanson Theatre &middot; 246 North Broadway &middot; New York, New York 10019</p>	
+	</footer>
+</body>
+</html>
+

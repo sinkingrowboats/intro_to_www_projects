@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Homework 4 Part B</title>
+    <!-- Samantha Rey, Homework 5-->
+    <!-- Modified March 2nd, Finished March 2nd 2017 -->
+    <!-- Validated on https://validator.w3.org/,
+         only warnings were about lack of headers -->
+    <!-- used the same html/css degisn as last week -->
+    <link href="reyForm.css" rel="stylesheet"/>
+</head>
+<body>
+<main>
+    <header><h1>Tickets</h1></header>
+    <form id="myform" method="post" action="https://cs101.cs.uchicago.edu/~sterner/show-data.php">
+        <!-- First Name, Last Name, Email --> 
+        <fieldset>   
+            <section>
+                <div class="inline">
+                    <label for="first-name">First Name <span>*</span></label>
+                    <input type="text" id="first-name" name="first_name"
+                    required="required"/>
+                </div>
+                <div class="inline">
+                    <label for="last-name">Last Name <span>*</span></label>
+                    <input type="text" id="last-name" name="last_name"
+                    required="required"/>
+                </div>
+            </section>
+            <section>
+                <div class="inline">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="text" id="email" name="email" required="required"/>
+                </div>
+            </section>
+        </fieldset> 
+
+        <!-- Billing Address -->
+        <fieldset class="billing">
+            <section>
+                <div class="inline">
+                    <label for="street-address">Address <span>*</span></label>
+                    <input type="text" id="street-address" name="street_address" required="required"/>
+                </div>
+                <div class="inline">
+                    <label for="city">City <span>*</span></label>
+                    <input type="text" id="city" name="city" required="required"/>
+            </div>
+            </section>
+            <section>
+                <div class="inline">
+                    <label for="state">State <span>*</span></label>
+                    <select id="state" name="state" class="dropdown">
+                    </select>
+                </div>
+                <div class="inline">
+                    <label for="zip-code">Zip Code <span>*</span></label>
+                    <input type="text" id="zip-code" name="zip_code" required="required"/>
+                </div>
+            </section>
+        </fieldset>
+
+        <!-- Payment Type -->
+        <!-- Changed "Paypal" to "BitCoin" per the request of the project -->
+        <fieldset>
+                <div class="selectone" id="paymentwarning">You must select one of the following</div>
+                <label>Payment Method <span>*</span></label>
+                <input type="radio" value="Credit Card" id="creditCard"
+                name="payment" required="required">
+                <label for="creditCard">Credit Card</label>
+                <input type="radio" value="BitCoin" id="bitcoin" name="payment"
+                required="required">
+                <label for="bitcoin">BitCoin</label>
+        </fieldset>
+
+        <!-- Hear more -->
+        <fieldset>
+                <div class="selectone" id="choosewarning">You must select one of the following</div>
+                <label>Would you like to hear more? <span>*</span></label>
+                <section class="centered" id="hearmore">
+                <div class="inline">
+                    <input type="checkbox" value="member" id="member"
+                    name="hearmore[]">
+                    <label for="member">I am already a member</label>
+                </div>
+                <div class="inline">
+                    <input type="checkbox" value="newsletter" id="newsletter"
+                    name="hearmore[]">
+                    <label for="newsletter">Please send the newsletter</label>
+                </div>
+                <div class="inline">
+                    <input type="checkbox" value="events" id="events"
+                    name="hearmore[]">
+                    <label for="events">I am interested in preshow events</label>
+                </div>   
+                </section>      
+        </fieldset>
+
+    <!-- Submit button to post the data -->
+    <!-- Changed the button to be type="button" rather than type="submit" so we could
+         validate the data when clicking the button before it gets submitted. Instead
+         the button calls the validator() function in hw5.js when it gets pressed, which
+         handles the submission of the form data -->
+    <section class="centered"><input type="button" value="Submit"
+        class="btn" onclick="validator()"/></section>
+    </form>
+    <!-- the script declaration had to be above where I used the docment.write to write
+         to the page, which is why it's not literally the last thing on the page -->
+    <script src="hw5.js"></script>
+    <div class="browser">
+        <script>browser()</script>
+    </div>
+</main>
+</body>
+</html>
