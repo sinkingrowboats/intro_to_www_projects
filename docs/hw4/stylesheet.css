@@ -1,9 +1,8 @@
-/* February 15th, 2015, Homework 4
-CSS document for the styling of the vububscript01.html page */
+/* February 15th, 2015, Homework 4 */
 
 /* overall page styling */
 body {
-	background-image: url("bubblebackground.jpg");
+	background-image: url("bubblebackground.png");
 	background-size: 1500px 998px;
 	background-color: black; /* backup color in case image fails to load */
 	color: white;
@@ -46,13 +45,13 @@ td:hover {
 
 /* lower link styling */
 a {
-    color: #b095ff;
+    color: #d6b7ff;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 400;
 }
 
 a:hover {
-    color: #8fb0ff;
+    color: #9ec5ff;
     font-weight: 800;
 }

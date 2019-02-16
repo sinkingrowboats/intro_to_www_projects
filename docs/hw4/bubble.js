@@ -5,8 +5,8 @@ This program
 (3) orders the 10 numbers from smallest to largest
 (4) populates the bottom row of the table with these numbers */
 
+var bubbleArray = new Array(10); //creates a new array with 10 empty items
 window.onload = initAll(); //loads the main function
-var bubArray = new Array(10); //creates a new array with 10 empty items
 
 function initAll() {
 //generates numbers
@@ -14,15 +14,15 @@ function initAll() {
 		var newNum = Math.floor(Math.random() * 25) + 1;
 
 		document.getElementById("square" + i).innerHTML = " "+newNum+" ";
-		bubArray[i] = newNum;
+		bubbleArray[i] = newNum;
 	}
 
 //sorts numbers
-    bubSrt(bubArray);
+    bubSrt(bubbleArray);
 
 //populates table with numbers
     for (var i=0; i<10; i++) {
-        document.getElementById("squareS" + i).innerHTML = bubArray[i];
+        document.getElementById("squareS" + i).innerHTML = bubbleArray[i];
     }
 }
 //end function
@@ -48,47 +48,3 @@ function bubSrt(bubArray) {
 }
 //end function
 
-/*
-function mrgSrt(inputArr) {
-    var length = inputArr.length;
-    
-    if(length == 1) {
-    	return inputArr;
-    }
-    
-    else {
-        var halfLen = Math.floor(length/2.0);
-	var leftLen = halfLen - 0;
-	var rightLen = length - halfLen;
-	var leftArr = mrgSrt(inputArr.slice(0, halfLen));
-	var rightArr = mrgSrt(inputArr.slice(halfLen, length));
-	
-	var leftCount = 0;
-	var rightCount = 0;
-	var srtArray
-	
-	while(leftCount < leftLen && rightCount < rightLen) {
-	    var leftNum = leftArr[leftCount];
-	    var rightNum = rightArr[rightCount];
-	    
-	    if (leftNum < rightNum) {
-	        srtArray.push(leftNum);
-		leftCount++;
-	    }
-	    else {
-	        srtArray.push(rightNum);
-		rightCount++
-	    }
-	}
-	
-	if(leftCount < leftLen) {
-	    srtArray = srtArray.concat(leftArr.slice(leftCount, leftLen));
-	}
-	else {
-	    srtArray = srtArray.concat(rightArr.slice(rightCount, rightLen));
-	}
-	
-	
-    }
-*/
-}
